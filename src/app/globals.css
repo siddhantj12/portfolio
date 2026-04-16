@@ -1,26 +1,46 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@custom-variant dark (&:where(.dark, .dark *));
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+:root {
+  --bg: #f5f3ee;
+  --bg2: #edeae3;
+  --fg: #0e0e0e;
+  --fg2: #6b6b6b;
+  --accent: #5b4de8;
+  --accent2: #7c6af7;
+  --border: rgba(0,0,0,0.08);
+  --font-display: var(--font-playfair);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.dark {
+  --bg: #0f0f0f;
+  --bg2: #181818;
+  --fg: #e8e2d9;
+  --fg2: #8a8a8a;
+  --accent: #7c6af7;
+  --accent2: #9b8bff;
+  --border: rgba(255,255,255,0.07);
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
 }
+
+html { scroll-behavior: smooth; background: var(--bg); }
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+::selection { background: #5b4de820; color: #5b4de8; }
+
+.font-display { font-family: var(--font-playfair), Georgia, serif; }
