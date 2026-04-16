@@ -9,7 +9,7 @@ const items = [
     role: "Founder · SFU Incubator",
     year: "2025–",
     desc: "Real-time Formula 1 telemetry dashboard. Invited into SFU's Early-Stage Incubator. 75% latency reduction, 50% higher engagement.",
-    live: "https://f1-dash-inky.vercel.app",
+    live: "https://thef1core.com",
     tags: ["Python", "FastAPI", "React"],
   },
   {
