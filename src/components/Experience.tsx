@@ -5,6 +5,7 @@ import { useRef } from "react";
 const jobs = [
   {
     company: "People & Data Computing Research Group, SFU",
+    url: "https://www.padcomp.org",
     role: "Undergraduate Research Assistant",
     period: "Apr 2024 – Present",
     tag: "Research",

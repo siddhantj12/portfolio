@@ -11,7 +11,7 @@ export default function Hero() {
         initial={{ opacity: 0, scale: 1.04 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1.1, ease: "easeOut" }}
-        className="relative h-[55vw] max-h-[70vh] lg:h-auto lg:max-h-none lg:self-center lg:mt-14 order-1 lg:order-none overflow-hidden lg:rounded-r-3xl"
+        className="relative h-[55vw] max-h-[70vh] lg:h-[85vh] lg:max-h-none lg:self-center lg:mt-14 order-1 lg:order-none overflow-hidden lg:rounded-r-3xl"
       >
         <Image
           src="/siddhant.jpg"
